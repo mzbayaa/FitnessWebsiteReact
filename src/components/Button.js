@@ -12,10 +12,10 @@ export const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
 
     return(
         <Link to='/book-now' className='btn-mobile'>
-            {/* whats passed as "children" gets displayed as component */}
+            {/* what's passed as "children" gets displayed as component */}
             <button className={'btn ${checkButtonStyle} ${checkButtonSize}'} onClick={onClick} type={type}>
                 {children}
             </button>
         </Link>
-    )
+    );
 };
