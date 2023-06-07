@@ -1,18 +1,25 @@
 import React from "react";
-import { Button } from "./Button";
+// import { Button } from "./Button";
+import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import "./HeroSection.css";
 
 function HeroSection() {
+  const navigate = useNavigate();
   return (
     <div className="hero-container">
       <h1> EMBRACE THE CHALLENGE</h1>
       <p>Why wait any longer?</p>
       <div className="hero-btns">
         <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
+          className="btn btn-dark btn-outline-light btn-lg"
+          onClick={() => {
+            navigate("/book-now");
+          }}
+          // buttonStyle="btn--outline"
+          // buttonSize="btn--large"
         >
           GET MOVING
         </Button>

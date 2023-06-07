@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Button } from "./Button";
+// import { Button } from "./Button";
+import { Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
 import { List } from "react-bootstrap-icons";
 
@@ -86,7 +88,8 @@ function Navbar() {
               {/* book now button */}
               {button && (
                 <Button
-                  buttonStyle="btn--outline"
+                  // buttonStyle="btn--outline"
+                  className="btn btn-dark btn-outline-light"
                   onClick={() => {
                     closeMobileMenu();
                     navigate("/book-now");
