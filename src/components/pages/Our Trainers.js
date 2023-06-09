@@ -13,24 +13,28 @@ export default function OurTrainers() {
         <Card className="our-trainers-custom-card">
           <Card.Img
             variant="top"
-            src="/images/ptraining.jpg"
+            src="/images/trainer1.jpeg"
             alt="Trainer Image"
             className="our-trainers-card-image"
           />
           <Card.Body className="our-trainers-card-content">
-            <Card.Title>Personal Training</Card.Title>
+            <Card.Title>
+              Personal Trainer <br /> Braden Smith
+            </Card.Title>
             <Card.Text>Description</Card.Text>
           </Card.Body>
         </Card>
         <Card className="our-trainers-custom-card">
           <Card.Img
             variant="top"
-            src="/images/group.jpg"
+            src="/images/trainer2.jpeg"
             alt="Trainer Image"
             className="our-trainers-card-image"
           />
           <Card.Body className="our-trainers-card-content">
-            <Card.Title>Group Training</Card.Title>
+            <Card.Title>
+              Group Trainer <br /> Asher Dele
+            </Card.Title>
             <Card.Text>Description</Card.Text>
           </Card.Body>
         </Card>
@@ -38,24 +42,28 @@ export default function OurTrainers() {
         <Card className="our-trainers-custom-card">
           <Card.Img
             variant="top"
-            src="/images/recovery.jpg"
+            src="/images/trainer3.jpeg"
             alt="Trainer Image"
             className="our-trainers-card-image"
           />
           <Card.Body className="our-trainers-card-content">
-            <Card.Title>Recovery</Card.Title>
+            <Card.Title>
+              Recovery Specialist <br /> Ashely Martins
+            </Card.Title>
             <Card.Text>Description</Card.Text>
           </Card.Body>
         </Card>
         <Card className="our-trainers-custom-card">
           <Card.Img
             variant="top"
-            src="/images/nutrition.jpg"
+            src="/images/trainer4.jpeg"
             alt="Trainer Image"
             className="our-trainers-card-image"
           />
           <Card.Body className="our-trainers-card-content">
-            <Card.Title>Nutrition</Card.Title>
+            <Card.Title>
+              Nutritionist <br /> Jabari Martial
+            </Card.Title>
             <Card.Text>Description</Card.Text>
           </Card.Body>
         </Card>
