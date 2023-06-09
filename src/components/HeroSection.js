@@ -18,8 +18,6 @@ function HeroSection() {
           onClick={() => {
             navigate("/book-now");
           }}
-          // buttonStyle="btn--outline"
-          // buttonSize="btn--large"
         >
           GET MOVING
         </Button>

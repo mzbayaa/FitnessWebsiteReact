@@ -1,0 +1,50 @@
+/* .services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.services-header {
+  margin-top: 125px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.services-second-header {
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+}
+
+.services-card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-custom-card {
+  flex-basis: calc(25% - 20px); /* Adjust the percentage and margin */
+  margin: 10px;
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for the cards */
+  height: 750px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.services-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.services-card-image {
+  height: 250px; /* Adjust the height */
+  object-fit: cover; /* Adjust the object-fit */
+}
+
+.services-card-button {
+  margin-top: auto; /* Pushes the button to the bottom */
+}

@@ -1,0 +1,28 @@
+.contact-us-container {
+  max-width: 95%;
+  margin-bottom: 50px;
+}
+
+.contact-us-header {
+  display: flex;
+  margin: 125px;
+  font-size: 50px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loaction-details-header {
+  font-size: 40px;
+}
+
+.hours-details-header {
+  font-size: 40px;
+}
+
+.location-details-text {
+  line-height: 200%;
+}
+
+.hours-details-text {
+  line-height: 200%;
+}

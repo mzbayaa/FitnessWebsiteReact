@@ -15,16 +15,12 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
   const [button, setButton] = useState(true);
   const navigate = useNavigate();
-  const test = ({ data1 }) => {
-    console.log(data1);
-  };
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
     } else {
       setButton(true);
     }
-    test({ data1: "hello", data2: "bye" });
   };
 
   //fixes bug where book now button shows up after refresh when window width is not full
