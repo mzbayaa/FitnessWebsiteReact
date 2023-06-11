@@ -7,14 +7,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function BookNow() {
   const services = [
-    { value: "", label: "Select" }, // Default option
+    { value: "", label: "Select" },
     { value: "Personal Training", label: "Personal Training" },
     { value: "Group Training", label: "Group Training" },
     { value: "Recovery", label: "Recovery" },
     { value: "Nutrition", label: "Nutrition" },
   ];
   const trainers = [
-    { value: "", label: "Select" }, // Default option
+    { value: "", label: "Select" },
     { value: "Personal Trainer", label: "Braden Smith" },
     { value: "Group Trainer", label: "Asher Dele" },
     { value: "Recovery Specialist", label: "Ashely Martins" },
@@ -24,8 +24,8 @@ export default function BookNow() {
 
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  const [service, setService] = useState(""); // Set initial state to empty string
-  const [trainer, setTrainer] = useState(""); // Set initial state to empty string
+  const [service, setService] = useState("");
+  const [trainer, setTrainer] = useState("");
 
   const handleBooking = () => {
     if (date && time && service && trainer) {
@@ -33,7 +33,6 @@ export default function BookNow() {
       // You can store them in a state variable, local storage, or send them to a server
       navigate("/information");
     } else {
-      // Show an error message or perform any desired action
       alert("Please fill in all the fields.");
     }
   };

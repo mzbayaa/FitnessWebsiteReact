@@ -28,6 +28,9 @@ function Home() {
           GET MOVING
         </Button>
       </div>
+      <div className="home-content">
+        <h2></h2>
+      </div>
     </div>
   );
 }

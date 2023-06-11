@@ -39,7 +39,7 @@ function Navbar() {
             HABIBI MUSCLE CLUB
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i className="bi bi-list" />
           </div>
           {/* clicking button will make it disapear after selection */}
           <ul className={click ? "nav-menu active" : "nav-menu"}>
