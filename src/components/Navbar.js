@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-// import { Button } from "./Button";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
@@ -35,7 +34,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           {/* logo */}
-          {/* onClick added so taht clicking logo closes the hamburger */}
+          {/* onClick added so that clicking logo closes the hamburger */}
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             HABIBI MUSCLE CLUB
           </Link>
@@ -84,7 +83,6 @@ function Navbar() {
               {/* book now button */}
               {button && (
                 <Button
-                  // buttonStyle="btn--outline"
                   className="btn btn-dark btn-outline-light"
                   onClick={() => {
                     closeMobileMenu();

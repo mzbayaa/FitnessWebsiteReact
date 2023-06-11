@@ -29,7 +29,7 @@
   background-attachment: fixed;
 }
 
-.services::before,
+/* .services::before,
 .our-trainers::before,
 .contact-us::before,
 .book-now::before {
@@ -41,7 +41,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-}
+} */
 
 .services {
   background-image: url("/public/images/img-2.jpg");

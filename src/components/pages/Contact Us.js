@@ -25,10 +25,11 @@ export default function ContactUs() {
           <Col className="location-details">
             <h1 className="loaction-details-header">HABIBI MUSCLE CLUB</h1>
             <p className="location-details-text">
-              Addressline 1 <br />
-              City, Province <br />
-              Postal Code <br />
-              Email Address
+              70 Laurier Ave E, <br />
+              Ottawa, Ontario <br />
+              K1N 6N6 <br />
+              HabibiMuscleClub@gmail.com <br />
+              (123)-456-789
             </p>
             <h2 classname="hours-details-header">Opening Hours</h2>
             <p className="hours-details-text">
