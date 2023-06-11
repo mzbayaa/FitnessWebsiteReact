@@ -10,11 +10,13 @@ import ContactUs from "./components/pages/Contact Us";
 import BookNow from "./components/pages/Book Now";
 import Information from "./components/pages/Information";
 import ConfirmBooking from "./components/pages/Confirm Booking";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />

@@ -11,7 +11,7 @@ function Home() {
     <div className="home-container">
       <video
         className="home-video"
-        src="../video/video-1.mp4"
+        src="../video/FitnessWebsiteVideo.mp4"
         autoPlay
         loop
         muted

@@ -3,7 +3,6 @@ import "../../App.css";
 import "./Our Trainers.css";
 import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Slider from "../Slider.js";
 
 export default function OurTrainers() {
   return (
@@ -131,8 +130,61 @@ export default function OurTrainers() {
         </Card>
       </div>
       <div>
-        <h2 className="our-trainers-second-header">Customers Review</h2>
-        <Slider />
+        <h2 className="quote-title">Customers Review</h2>
+        <div className="quote">
+          <h5 className="quote-header">John Doe</h5>
+          <img src="/images/five-star.png" alt="stars" />
+          <p className="quote-desc">
+            "Working with my Braden has been a game-changer for me. They have
+            not only helped me achieve my fitness goals but also taught me the
+            importance of proper form and technique. Their expertise and
+            guidance have made every workout session enjoyable and rewarding. I
+            am grateful for their support and motivation throughout my fitness
+            journey."
+          </p>
+        </div>
+        <div className="quote">
+          <h5 className="quote-header">Micheal Scott</h5>
+          <img src="/images/five-star.png" alt="stars" />
+          <p className="quote-desc">
+            "Group training has been an incredible experience for me. The energy
+            and camaraderie of exercising alongside like-minded individuals is
+            truly motivating. Asher creates challenging and dynamic workouts
+            that push us to new limits, all while fostering a supportive and
+            encouraging environment. Not only have I seen great physical
+            results, but I've also gained new friends and a sense of community.
+            Group training has made my fitness journey enjoyable and inspiring."
+          </p>
+        </div>
+        <div className="quote">
+          <h5 className="quote-header">Avery Goerge</h5>
+          <img src="/images/five-star.png" alt="stars" />
+          <p className="quote-desc">
+            "Prioritizing recovery in my fitness routine has been a
+            game-changer. Ashely emphasized the importance of rest and
+            rejuvenation, and it has made a significant impact on my overall
+            well-being. By incorporating stretching, foam rolling, and active
+            recovery techniques, I've noticed reduced muscle soreness, increased
+            flexibility, and improved performance in my workouts. Recovery has
+            become an essential part of my fitness journey, allowing me to push
+            harder and reach new heights while maintaining a healthy balance."
+          </p>
+        </div>
+        <div className="quote">
+          <h5 className="quote-header">Mark Andrew</h5>
+          <img src="/images/five-star.png" alt="stars" />
+          <p className="quote-desc">
+            "Learning about proper nutrition from Jabari has been life-changing.
+            They helped me understand the significance of fueling my body with
+            wholesome foods that nourish and energize me. With their guidance,
+            I've developed healthier eating habits, made smarter food choices,
+            and achieved a better relationship with food. Not only have I seen
+            positive changes in my physical appearance, but I also feel more
+            vibrant and focused throughout the day. Nutrition truly plays a
+            vital role in my fitness journey, and I'm grateful for the knowledge
+            and support my trainer has provided."
+          </p>
+        </div>
       </div>
     </div>
   );

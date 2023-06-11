@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../App.css";
 import "./Information.css";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +7,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Information() {
   const navigate = useNavigate();
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const handleConfirmBooking = () => {
+    if (firstName && lastName && email && phoneNumber) {
+      // Save the user inputs for later use
+      // You can store them in a state variable, local storage, or send them to a server
+      navigate("/confirm-booking");
+    } else {
+      // Show an error message or perform any desired action
+      alert("Please fill in all the fields.");
+    }
+  };
+
   return (
     <div>
       <h2 className="information-header">Your information</h2>
@@ -19,6 +36,8 @@ export default function Information() {
                 <Form.Control
                   type="name"
                   placeholder="First Name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                 ></Form.Control>
               </Form.Group>
             </Form>
@@ -30,6 +49,8 @@ export default function Information() {
                 <Form.Control
                   type="name"
                   placeholder="Last Name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                 ></Form.Control>
               </Form.Group>
             </Form>
@@ -43,6 +64,8 @@ export default function Information() {
                 <Form.Control
                   type="email"
                   placeholder="Example@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 ></Form.Control>
               </Form.Group>
             </Form>
@@ -51,33 +74,40 @@ export default function Information() {
             <Form>
               <Form.Group>
                 <Form.Label>Phone number:</Form.Label>
-                <Form.Control type="" placeholder="xxx-xxx-xxxx"></Form.Control>
+                <Form.Control
+                  type=""
+                  placeholder="xxx-xxx-xxxx"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                ></Form.Control>
               </Form.Group>
             </Form>
           </Col>
         </Row>
         <Row>
-          <Col nameClass="button-col">
+          <Col
+            nameClass="button-col"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <Button
               className="button"
               className="btn btn-dark"
-              onClick={() => {
-                navigate("/confirm-booking");
-              }}
+              onClick={handleConfirmBooking}
             >
               CONFIRM BOOKING
             </Button>
-            <Button
-              className="button"
-              className="btn btn-dark"
-              onClick={() => {
-                navigate("/book-now");
-              }}
-            >
-              BACK
-            </Button>
           </Col>
         </Row>
+        <Button
+          className="button-back"
+          className="btn btn-dark"
+          style={{ float: "right" }}
+          onClick={() => {
+            navigate("/book-now");
+          }}
+        >
+          BACK
+        </Button>
       </Container>
     </div>
   );
